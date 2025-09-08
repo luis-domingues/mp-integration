@@ -1,12 +1,12 @@
 package com.payment.mp_integration.dto;
 
+import lombok.Data;
+
 @Data
-public class CreatePaymentDTO {
+public class PaymentRequestDTO {
     public String token;
     public String paymentMethodId;
     public String email;
-    public String amount;
+    public Float amount;
     public Integer installments = 1;
-    public String idempotencyKey;
-    public String description;
 }
